@@ -380,13 +380,49 @@ main {
 .home-page-1 {
   width: 100%;
   height: 721px;
+  background-color: bisque;
+}
+
+.home-page-1-imgs-container {
+  max-width: 100rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-page-1-img-cont {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: transform 1s;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: filter 0.5s;
+}
+
+.page-1-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 651px;
-  background: url("images/home-1.png");
-  background-size: cover;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -414,4 +450,27 @@ button {
 .page-1-button {
   background-color: var(--button-color-fresh-green);
   padding: 1%;
+}
+
+.dots-container {
+  width: 200px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: #02021d;
 }
