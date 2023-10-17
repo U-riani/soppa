@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
+    <link rel="stylesheet" href="account.css" />
+    <title>Document</title>
+    <script type="module" src="account.js"></script>
   </head>
   <body>
     <header>
@@ -44,9 +45,9 @@
             </div>
             <div class="login-icon icon">
               <a href="account.html" class="login-icon-anchor">
-              <div class="icon-head"></div>
-              <div class="icon-body"></div>
-            </a>
+                <div class="icon-head"></div>
+                <div class="icon-body"></div>
+              </a>
             </div>
             <div class="shopping-icon icon">
               <div class="shopping-icon-head">
@@ -60,13 +61,29 @@
         </div>
       </div>
     </header>
-    <main class="home">
-        <div class="home-page-1">
-            <div class="container-1">
-                <h2 class="page-1-title">Step inside, for comfort and magic awit you.</h2>
-                <button class="button page-1-button">Shop Now</button>
+    <main class="sign-in-page">
+      <div class="sign-in-container">
+        <div class="form-container">
+          <form action="" class="form firt-step" id="form-first-step">
+            <h2 class="form-title">Sign in.</h2>
+            <!-- <label for="mail" class="label-mail"></label> -->
+            <input
+              type="mail"
+              class="mail"
+              name="male"
+              id="login-mail"
+              placeholder="Email address"
+            />
+            <button type="submit" class="submit-button">
+              Email me a login link
+            </button>
+            <div class="if-new-user">
+              <h4 class="ask-if-new-user">New to Sopa?</h4>
+              <a href="#" class="create-account"><h4>Create an account</h4></a>
             </div>
+          </form>
         </div>
+      </div>
     </main>
     <footer>
       <div class="footer-updates">
