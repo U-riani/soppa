@@ -342,6 +342,7 @@ header {
 
 .if-new-user {
   display: flex;
+  /* flex-direction: column; */
   justify-content: flex-start;
   gap: 3%;
 }
@@ -567,5 +568,8 @@ footer div a {
   }
 }
 
-.password {
+.hide{
+  display: none;
+  width: 0;
+  height: 0;
 }

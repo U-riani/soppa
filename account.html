@@ -64,22 +64,82 @@
     <main class="sign-in-page">
       <div class="sign-in-container">
         <div class="form-container">
-          <form action="" class="form firt-step" id="form-first-step">
-            <h2 class="form-title">Sign in.</h2>
-            <!-- <label for="mail" class="label-mail"></label> -->
-            <input
-              type="mail"
-              class="mail"
-              name="male"
-              id="login-mail"
-              placeholder="Email address"
-            />
-            <button type="submit" class="submit-button">
-              Email me a login link
-            </button>
-            <div class="if-new-user">
-              <h4 class="ask-if-new-user">New to Sopa?</h4>
-              <a href="#" class="create-account"><h4>Create an account</h4></a>
+          <form action="#" class="form first-step" id="form-first-step">
+            <div class="form mini-form">
+              <h2 class="form-title">Sign in.</h2>
+              <!-- <label for="mail" class="label-mail"></label> -->
+              <input
+                type="mail"
+                class="mail"
+                name="male"
+                id="login-mail"
+                placeholder="Email address"
+              />
+              <button type="submit" class="submit-button">
+                Email me a login link
+              </button>
+              <div class="if-new-user">
+                <h4 class="ask-if-new-user">New to Sopa?</h4>
+                <a href="#" class="create-account"
+                  ><h4 class="create-account first">Create an account</h4></a
+                >
+              </div>
+            </div>
+            <div class="form mini-form hide">
+              <h2 class="form-title">Create an Account.</h2>
+              <div class="mail-container">
+                <label for="new-mail" class="label"> Email Adress.</label>
+                <input
+                  type="mail"
+                  class="mail"
+                  placeholder="Email
+                  Adress"
+                  id="new-mail"
+                />
+              </div>
+              <div class="password-container">
+                <label class="label" for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="password"
+                  class="password"
+                />
+              </div>
+              <button type="submit" class="submit-button second">
+                Create Account
+              </button>
+              <div class="if-new-user">
+                <h4 class="ask-if-new-user">Already have an account?</h4>
+                <a>Sign in</a>
+              </div>
+            </div>
+            <div class="form mini-form hide">
+              <h2 class="form-title">verify Your Email</h2>
+              <h3 class="verify-title">Code Sent!</h3>
+              <p class="verify-paragraph">
+                We sent a verification <span>Mail</span> enter below
+              </p>
+              <input type="text" class="verify-input" placeholder="Code" />
+              <button type="submit" class="verify-button third">Verify</button>
+              <a href="#" class="edit-mail">Edit Email</a>
+            </div>
+            <div class="form mini-form hide">
+              <h2 class="form-title">verify Your Email</h2>
+              <div class="placed-orders-container">
+                <label>0 orders placed in</label>
+                <select>
+                  <option>Last 10 days</option>
+                  <option>Last 20 days</option>
+                  <option>Last 30 days</option>
+                  <option>Last 40 days</option>
+                  <option>Last 50 days</option>
+                </select>
+              </div>
+              <p class="orders-paragraph">
+                You haven't placed any orders in the period.
+              </p>
+              <button type="submit" class="order-button">Start Shopping</button>
             </div>
           </form>
         </div>
